@@ -8,7 +8,7 @@ use `xxl_job`;
 SET NAMES utf8mb4;
 
 CREATE TABLE `xxl_job_info` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
   `job_group` int(11) NOT NULL COMMENT '执行器主键ID',
   `job_desc` varchar(255) NOT NULL,
   `add_time` datetime DEFAULT NULL,
