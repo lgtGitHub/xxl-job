@@ -75,6 +75,14 @@
 		LIMIT #{offset}, #{pagesize}
 	</select>
 
+
+	<select id="findByAppname"  resultType="java.lang.Integer">
+		SELECT id
+		FROM xxl_job_group
+		where app_name = #{appname}
+		LIMIT 1;
+	</select>
+
 	<select id="pageListCount" parameterType="java.util.HashMap" resultType="int">
 		SELECT count(1)
 		FROM xxl_job_group AS t
